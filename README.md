@@ -23,7 +23,8 @@ The expiration time of the urls is currently set for 20 seconds for testing reas
 You can change it from the app/main.py file. You can change it while the program is up and running as well.
 
 ## Running the tests:
-Ensure you have installed all the test libraries imported in tests/test_url_shortener.py: \
+! ! ! ! ! Ensure that you have installed all the libraries imported in all the .py project files and test files
+otherwise you will have errors ! ! ! ! !\
 Open a new terminal in the project's root directory and run:
 ```
 $ pytest
