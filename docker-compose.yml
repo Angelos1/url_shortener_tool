@@ -1,0 +1,26 @@
+version: "3.9"
+services:
+  app:
+    build: .
+    image: my_image
+    env_file:
+      - .env
+    stdin_open: true
+    tty: true
+    container_name: url_shortener_tool
+    volumes:
+      - ./app:/home/app_user
+    depends_on:
+      - mongodb
+  mongodb:
+    image: mongo:latest
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: camara
+      MONGO_INITDB_ROOT_PASSWORD: camara
+    ports:
+      - 27017:27017
+    container_name: mongodb
+    volumes:
+      - ./mongodb_data:/data/db
+volumes:
+  mongodb_data:
