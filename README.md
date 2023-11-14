@@ -1,6 +1,6 @@
 ## Running  and using the tool:
-####Ensure that port 27017 is free on your machine (mongo instance will use this port).
-#### Open a terminal in the project's root directory and do the following:
+Ensure that port 27017 is free on your machine (mongo instance will use this port). \
+Open a terminal in the project's root directory and do the following:
 #### - Start the Url shortener app by running:
 ```
 $ docker compose up -d
@@ -23,9 +23,9 @@ The expiration time of the urls is currently set for 20 seconds for testing reas
 You can change it from the app/main.py file. You can change it while the program is up and running as well.
 
 ## Running the tests:
-####Ensure you have installed all the test libraries imported in tests/test_url_shortener.py:
-####Open a new terminal in the project's root directory and run:
+Ensure you have installed all the test libraries imported in tests/test_url_shortener.py: \
+Open a new terminal in the project's root directory and run:
 ```
 $ pytest
 ```
-I only implemented few of the tests that need to be implemented.# url_shortener_tool
+I only implemented few of the tests that need to be implemented.
